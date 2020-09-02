@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84F702C824FF766B00D8EE71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F702C724FF766B00D8EE71 /* AppDelegate.swift */; };
+		84F702CA24FF766B00D8EE71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F702C924FF766B00D8EE71 /* SceneDelegate.swift */; };
+		84F702CC24FF766B00D8EE71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F702CB24FF766B00D8EE71 /* ViewController.swift */; };
+		84F702CF24FF766B00D8EE71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F702CD24FF766B00D8EE71 /* Main.storyboard */; };
+		84F702D224FF766B00D8EE71 /* NIBM_COVID19.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84F702D024FF766B00D8EE71 /* NIBM_COVID19.xcdatamodeld */; };
+		84F702D424FF766E00D8EE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F702D324FF766E00D8EE71 /* Assets.xcassets */; };
+		84F702D724FF766E00D8EE71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F702D524FF766E00D8EE71 /* LaunchScreen.storyboard */; };
+		84F702E224FF766E00D8EE71 /* NIBM_COVID19Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F702E124FF766E00D8EE71 /* NIBM_COVID19Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84F702DE24FF766E00D8EE71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F702BC24FF766B00D8EE71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F702C324FF766B00D8EE71;
+			remoteInfo = "NIBM-COVID19";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84F702C424FF766B00D8EE71 /* NIBM-COVID19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NIBM-COVID19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F702C724FF766B00D8EE71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84F702C924FF766B00D8EE71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84F702CB24FF766B00D8EE71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84F702CE24FF766B00D8EE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84F702D124FF766B00D8EE71 /* NIBM_COVID19.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NIBM_COVID19.xcdatamodel; sourceTree = "<group>"; };
+		84F702D324FF766E00D8EE71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84F702D624FF766E00D8EE71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84F702D824FF766E00D8EE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F702DD24FF766E00D8EE71 /* NIBM-COVID19Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NIBM-COVID19Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F702E124FF766E00D8EE71 /* NIBM_COVID19Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBM_COVID19Tests.swift; sourceTree = "<group>"; };
+		84F702E324FF766E00D8EE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F702C124FF766B00D8EE71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F702DA24FF766E00D8EE71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84F702BB24FF766B00D8EE71 = {
+			isa = PBXGroup;
+			children = (
+				84F702C624FF766B00D8EE71 /* NIBM-COVID19 */,
+				84F702E024FF766E00D8EE71 /* NIBM-COVID19Tests */,
+				84F702C524FF766B00D8EE71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84F702C524FF766B00D8EE71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F702C424FF766B00D8EE71 /* NIBM-COVID19.app */,
+				84F702DD24FF766E00D8EE71 /* NIBM-COVID19Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F702C624FF766B00D8EE71 /* NIBM-COVID19 */ = {
+			isa = PBXGroup;
+			children = (
+				84F702C724FF766B00D8EE71 /* AppDelegate.swift */,
+				84F702C924FF766B00D8EE71 /* SceneDelegate.swift */,
+				84F702CB24FF766B00D8EE71 /* ViewController.swift */,
+				84F702CD24FF766B00D8EE71 /* Main.storyboard */,
+				84F702D324FF766E00D8EE71 /* Assets.xcassets */,
+				84F702D524FF766E00D8EE71 /* LaunchScreen.storyboard */,
+				84F702D824FF766E00D8EE71 /* Info.plist */,
+				84F702D024FF766B00D8EE71 /* NIBM_COVID19.xcdatamodeld */,
+			);
+			path = "NIBM-COVID19";
+			sourceTree = "<group>";
+		};
+		84F702E024FF766E00D8EE71 /* NIBM-COVID19Tests */ = {
+			isa = PBXGroup;
+			children = (
+				84F702E124FF766E00D8EE71 /* NIBM_COVID19Tests.swift */,
+				84F702E324FF766E00D8EE71 /* Info.plist */,
+			);
+			path = "NIBM-COVID19Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F702C324FF766B00D8EE71 /* NIBM-COVID19 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F702E624FF766E00D8EE71 /* Build configuration list for PBXNativeTarget "NIBM-COVID19" */;
+			buildPhases = (
+				84F702C024FF766B00D8EE71 /* Sources */,
+				84F702C124FF766B00D8EE71 /* Frameworks */,
+				84F702C224FF766B00D8EE71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NIBM-COVID19";
+			productName = "NIBM-COVID19";
+			productReference = 84F702C424FF766B00D8EE71 /* NIBM-COVID19.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84F702DC24FF766E00D8EE71 /* NIBM-COVID19Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F702E924FF766E00D8EE71 /* Build configuration list for PBXNativeTarget "NIBM-COVID19Tests" */;
+			buildPhases = (
+				84F702D924FF766E00D8EE71 /* Sources */,
+				84F702DA24FF766E00D8EE71 /* Frameworks */,
+				84F702DB24FF766E00D8EE71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F702DF24FF766E00D8EE71 /* PBXTargetDependency */,
+			);
+			name = "NIBM-COVID19Tests";
+			productName = "NIBM-COVID19Tests";
+			productReference = 84F702DD24FF766E00D8EE71 /* NIBM-COVID19Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F702BC24FF766B00D8EE71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Gihan;
+				TargetAttributes = {
+					84F702C324FF766B00D8EE71 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					84F702DC24FF766E00D8EE71 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 84F702C324FF766B00D8EE71;
+					};
+				};
+			};
+			buildConfigurationList = 84F702BF24FF766B00D8EE71 /* Build configuration list for PBXProject "NIBM-COVID19" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84F702BB24FF766B00D8EE71;
+			productRefGroup = 84F702C524FF766B00D8EE71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F702C324FF766B00D8EE71 /* NIBM-COVID19 */,
+				84F702DC24FF766E00D8EE71 /* NIBM-COVID19Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F702C224FF766B00D8EE71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F702D724FF766E00D8EE71 /* LaunchScreen.storyboard in Resources */,
+				84F702D424FF766E00D8EE71 /* Assets.xcassets in Resources */,
+				84F702CF24FF766B00D8EE71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F702DB24FF766E00D8EE71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F702C024FF766B00D8EE71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F702CC24FF766B00D8EE71 /* ViewController.swift in Sources */,
+				84F702D224FF766B00D8EE71 /* NIBM_COVID19.xcdatamodeld in Sources */,
+				84F702C824FF766B00D8EE71 /* AppDelegate.swift in Sources */,
+				84F702CA24FF766B00D8EE71 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F702D924FF766E00D8EE71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F702E224FF766E00D8EE71 /* NIBM_COVID19Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84F702DF24FF766E00D8EE71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F702C324FF766B00D8EE71 /* NIBM-COVID19 */;
+			targetProxy = 84F702DE24FF766E00D8EE71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84F702CD24FF766B00D8EE71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F702CE24FF766B00D8EE71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84F702D524FF766E00D8EE71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F702D624FF766E00D8EE71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84F702E424FF766E00D8EE71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84F702E524FF766E00D8EE71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F702E724FF766E00D8EE71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XCPM2R6PDV;
+				INFOPLIST_FILE = "NIBM-COVID19/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gihan.NIBM-COVID19";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84F702E824FF766E00D8EE71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XCPM2R6PDV;
+				INFOPLIST_FILE = "NIBM-COVID19/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gihan.NIBM-COVID19";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84F702EA24FF766E00D8EE71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XCPM2R6PDV;
+				INFOPLIST_FILE = "NIBM-COVID19Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gihan.NIBM-COVID19Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NIBM-COVID19.app/NIBM-COVID19";
+			};
+			name = Debug;
+		};
+		84F702EB24FF766E00D8EE71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XCPM2R6PDV;
+				INFOPLIST_FILE = "NIBM-COVID19Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gihan.NIBM-COVID19Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NIBM-COVID19.app/NIBM-COVID19";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F702BF24FF766B00D8EE71 /* Build configuration list for PBXProject "NIBM-COVID19" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F702E424FF766E00D8EE71 /* Debug */,
+				84F702E524FF766E00D8EE71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F702E624FF766E00D8EE71 /* Build configuration list for PBXNativeTarget "NIBM-COVID19" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F702E724FF766E00D8EE71 /* Debug */,
+				84F702E824FF766E00D8EE71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F702E924FF766E00D8EE71 /* Build configuration list for PBXNativeTarget "NIBM-COVID19Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F702EA24FF766E00D8EE71 /* Debug */,
+				84F702EB24FF766E00D8EE71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84F702D024FF766B00D8EE71 /* NIBM_COVID19.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84F702D124FF766B00D8EE71 /* NIBM_COVID19.xcdatamodel */,
+			);
+			currentVersion = 84F702D124FF766B00D8EE71 /* NIBM_COVID19.xcdatamodel */;
+			path = NIBM_COVID19.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84F702BC24FF766B00D8EE71 /* Project object */;
+}
