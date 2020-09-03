@@ -9,6 +9,8 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    @IBOutlet var txtEmail: UITextField!
+    @IBOutlet var textPassword: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +19,13 @@ class LoginViewController: UIViewController {
 
     }
     
-
+    @IBAction func actionLogin(_ sender: Any) {
+        guard let email = txtEmail.text, let password = textPassword.text else {
+            return
+        }
+        Services.login(email: email, password: password)
+    }
+    
     /*
     // MARK: - Navigation
 

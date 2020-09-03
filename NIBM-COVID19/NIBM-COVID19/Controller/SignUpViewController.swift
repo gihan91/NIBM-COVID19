@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class SignUpViewController: UIViewController {
 
@@ -17,6 +18,8 @@ class SignUpViewController: UIViewController {
     var userTypes = ["Student", "Academic Staff", "Non-Academic Staff"]
     var pickerUserTypes = UIPickerView()
     let getLocation = LocationManager()
+    var lat: CLLocationDegrees?
+    var long: CLLocationDegrees?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,20 +29,38 @@ class SignUpViewController: UIViewController {
         self.pickerUserTypes.dataSource = self
 
         self.txtUserType.inputView = pickerUserTypes
-
-
+        getCurrentLocation()
 
     }
 
     fileprivate func getCurrentLocation() {
         getLocation.getCurrentLocation { (res) in
             if let loc = res?.coordinate {
-                print(":::: res lat is \(loc.latitude)")
+                self.lat = loc.latitude
+                self.long = loc.longitude
             }
         }
     }
 
-
+    @IBAction func actionSignUp(_ sender: Any) {
+        guard let email = txtEmail.text else {
+            return
+        }
+        guard let password = txtPassword.text else {
+            return
+        }
+        guard let userType = txtUserType.text else {
+            return
+        }
+        guard let lat = self.lat else {
+            return
+        }
+        guard let lon = self.long else {
+            return
+        }
+        Services.registerUser(withEmail: email, passwordIs: password, UserType: userType, latitude: lat, longitude: lon) { (success) in
+        }
+    }
 }
 
 extension SignUpViewController: UIPickerViewDelegate, UIPickerViewDataSource {
