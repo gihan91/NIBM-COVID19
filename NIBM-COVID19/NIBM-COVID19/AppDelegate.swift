@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,19 +20,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        GMSServices.provideAPIKey("AIzaSyC1OCuFz08gzi55MzgCxFVPyZ_MitnyVkQ")
         self.storyboard =  UIStoryboard(name: "Main", bundle: Bundle.main)
         let currentUser = Auth.auth().currentUser
            if currentUser != nil
            {
             self.window?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "tabBarHome") 
             print("::::here tab")
+            window?.makeKeyAndVisible()
            }
+
            else
            {
             self.window?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "loginVC")
             print("::::here login")
+            window?.makeKeyAndVisible()
            }
+        window?.makeKeyAndVisible()
         return true
+
     }
 
     // MARK: UISceneSession Lifecycle

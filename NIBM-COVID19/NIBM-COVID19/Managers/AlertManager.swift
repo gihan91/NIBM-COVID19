@@ -16,4 +16,8 @@ class Alert {
     alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
     controller.present(alert, animated: true, completion: nil)
     }
+
+    static func showMessageWithAction(title: String, msg: String,`on` controller: UIViewController ){
+        
+    }
 }

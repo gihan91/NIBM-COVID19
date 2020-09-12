@@ -10,6 +10,7 @@
 		02C1EAED1C57B412C65FFE08 /* Pods_NIBM_COVID19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57D78976449A88139B8905E /* Pods_NIBM_COVID19.framework */; };
 		8447C8F0250CA16C00B7301E /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447C8EF250CA16C00B7301E /* UserDefaultManager.swift */; };
 		8447C8F2250CA1A900B7301E /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447C8F1250CA1A900B7301E /* AuthenticationManager.swift */; };
+		8447C8F4250CCB1600B7301E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447C8F3250CCB1600B7301E /* UserModel.swift */; };
 		8455B0E6250A0C3A008EA7EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455B0E5250A0C3A008EA7EB /* HomeViewController.swift */; };
 		8455B0E8250A0D55008EA7EB /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455B0E7250A0D55008EA7EB /* CategoryTableViewCell.swift */; };
 		8455B0EA250A108D008EA7EB /* InfectedUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455B0E9250A108D008EA7EB /* InfectedUsersViewController.swift */; };
@@ -51,6 +52,7 @@
 		6CD54621921C20F63A4D91D6 /* Pods-NIBM-COVID19Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBM-COVID19Tests.debug.xcconfig"; path = "Target Support Files/Pods-NIBM-COVID19Tests/Pods-NIBM-COVID19Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8447C8EF250CA16C00B7301E /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 		8447C8F1250CA1A900B7301E /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		8447C8F3250CCB1600B7301E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		8455B0E5250A0C3A008EA7EB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8455B0E7250A0D55008EA7EB /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		8455B0E9250A108D008EA7EB /* InfectedUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectedUsersViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 		84F702EC24FF76AF00D8EE71 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8447C8F3250CCB1600B7301E /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				84F702C124FF766B00D8EE71 /* Frameworks */,
 				84F702C224FF766B00D8EE71 /* Resources */,
 				73E5A2902411D612DED54FD1 /* [CP] Embed Pods Frameworks */,
+				C670BA27F3C44FDCC7443317 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -408,6 +412,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C670BA27F3C44FDCC7443317 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NIBM-COVID19/Pods-NIBM-COVID19-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NIBM-COVID19/Pods-NIBM-COVID19-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NIBM-COVID19/Pods-NIBM-COVID19-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -433,6 +454,7 @@
 				84F702CA24FF766B00D8EE71 /* SceneDelegate.swift in Sources */,
 				84E95B2A2501276800E1F8AA /* LocationManager.swift in Sources */,
 				8455B0E8250A0D55008EA7EB /* CategoryTableViewCell.swift in Sources */,
+				8447C8F4250CCB1600B7301E /* UserModel.swift in Sources */,
 				8455B0F3250A3FA3008EA7EB /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
