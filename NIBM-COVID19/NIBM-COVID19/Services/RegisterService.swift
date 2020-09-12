@@ -34,13 +34,17 @@ class Services {
 
     }
 
-    static func login(email: String, password: String) {
+    static func login(email: String, password: String,completion: @escaping CompletionHandler) {
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if let error = error {
                 print("Cant log in\(error)")
+                completion(false)
                 return
-            } 
-            print("Successfully log in")
+            } else {
+                completion(true)
+                print("Successfully log in")
+            }
+
         }
     }
 }

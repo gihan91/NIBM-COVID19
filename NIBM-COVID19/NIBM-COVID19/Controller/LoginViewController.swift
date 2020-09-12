@@ -16,24 +16,40 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         //Hide keyboard when click background
         self.hideKeyboardWhenTappedAround()
+        Utill.sharedInstance.setupNavigationBar(title: "")
 
     }
     
     @IBAction func actionLogin(_ sender: Any) {
-        guard let email = txtEmail.text, let password = textPassword.text else {
-            return
-        }
-        Services.login(email: email, password: password)
+        if userLoginValidation() {}
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func userLoginValidation() -> Bool {
+        if let email = txtEmail.text, let password = textPassword.text {
+            if email != "" && password != "" {
+                Services.login(email: email, password: password) { (success) in
+                    if success {
+                        self.goToHomeVC()
+                    } else {
+                        Alert.showMessage(title: "Warning", msg: "Wrong email or password", on: self)
+                    }
+                }
+                return true
+            } else {
+                //fails
+                Alert.showMessage(title: "Warning", msg: "Please Check All Fields", on: self)
+                return false
+            }
+
+        }
+         return false
     }
-    */
+
+    fileprivate func goToHomeVC() {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "tabBarHome") as! UITabBarController
+        self.navigationController?.pushViewController(newViewController, animated: true)
+
+    }
 
 }
