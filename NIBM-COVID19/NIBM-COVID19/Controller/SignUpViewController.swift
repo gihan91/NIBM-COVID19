@@ -42,23 +42,36 @@ class SignUpViewController: UIViewController {
         }
     }
 
+    private func validationForSignUp() -> Bool {
+        if let email = txtEmail.text, let password = txtPassword.text, let userType = txtUserType.text {
+            if email != "" && password != "" && userType != "" {
+                Services.registerUser(withEmail: email, passwordIs: password, UserType: userType, latitude: lat!, longitude: long!) { (succes) in
+                    if succes {
+                        self.goToHomeVC()
+                    } else {
+                        Alert.showMessage(title: "Warning", msg: "Wrong email or password", on: self)
+                        
+                    }
+                }
+                return true
+            } else {
+                Alert.showMessage(title: "Warning", msg: "Please Check All Fields", on: self)
+                return false
+            }
+        }
+        return false
+    }
+
+    fileprivate func goToHomeVC() {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "tabBarHome") as! UITabBarController
+        self.navigationController?.pushViewController(newViewController, animated: true)
+
+    }
+
     @IBAction func actionSignUp(_ sender: Any) {
-        guard let email = txtEmail.text else {
-            return
-        }
-        guard let password = txtPassword.text else {
-            return
-        }
-        guard let userType = txtUserType.text else {
-            return
-        }
-        guard let lat = self.lat else {
-            return
-        }
-        guard let lon = self.long else {
-            return
-        }
-        Services.registerUser(withEmail: email, passwordIs: password, UserType: userType, latitude: lat, longitude: lon) { (success) in
+        if validationForSignUp() {
+            
         }
     }
 }

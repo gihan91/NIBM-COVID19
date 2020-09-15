@@ -14,4 +14,10 @@ class User {
     var long: Double?
     var userType: String?
     var status: Bool?
+    var userTemp: Double?
+    var userArray:UserObj?
+}
+
+struct UserObj {
+    var userCount: [User] = [User]()
 }

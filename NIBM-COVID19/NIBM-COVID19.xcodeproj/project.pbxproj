@@ -9,15 +9,19 @@
 /* Begin PBXBuildFile section */
 		02C1EAED1C57B412C65FFE08 /* Pods_NIBM_COVID19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57D78976449A88139B8905E /* Pods_NIBM_COVID19.framework */; };
 		8447C8F0250CA16C00B7301E /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447C8EF250CA16C00B7301E /* UserDefaultManager.swift */; };
-		8447C8F2250CA1A900B7301E /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447C8F1250CA1A900B7301E /* AuthenticationManager.swift */; };
 		8447C8F4250CCB1600B7301E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447C8F3250CCB1600B7301E /* UserModel.swift */; };
+		845230E925112A5B002D4239 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845230E825112A5B002D4239 /* SettingViewController.swift */; };
 		8455B0E6250A0C3A008EA7EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455B0E5250A0C3A008EA7EB /* HomeViewController.swift */; };
 		8455B0E8250A0D55008EA7EB /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455B0E7250A0D55008EA7EB /* CategoryTableViewCell.swift */; };
 		8455B0EA250A108D008EA7EB /* InfectedUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455B0E9250A108D008EA7EB /* InfectedUsersViewController.swift */; };
 		8455B0ED250A1554008EA7EB /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455B0EC250A1554008EA7EB /* NavigationUtil.swift */; };
 		8455B0EF250A1699008EA7EB /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455B0EE250A1699008EA7EB /* AlertManager.swift */; };
 		8455B0F3250A3FA3008EA7EB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455B0F2250A3FA3008EA7EB /* MapViewController.swift */; };
-		8455B0F5250A3FCC008EA7EB /* SummeryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455B0F4250A3FCC008EA7EB /* SummeryViewController.swift */; };
+		84B3C7692510F9E60015122B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C7682510F9E60015122B /* FirstViewController.swift */; };
+		84B3C76B2510FC000015122B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C76A2510FC000015122B /* PageViewController.swift */; };
+		84B3C76D251110130015122B /* AvoidSickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C76C251110130015122B /* AvoidSickViewController.swift */; };
+		84B3C76F2511104A0015122B /* AvoidCrowdedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C76E2511104A0015122B /* AvoidCrowdedViewController.swift */; };
+		84B3C7712511107F0015122B /* AvoidSickPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C7702511107F0015122B /* AvoidSickPeopleViewController.swift */; };
 		84E95B202500D10E00E1F8AA /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E95B1F2500D10E00E1F8AA /* RoundButton.swift */; };
 		84E95B222500D45300E1F8AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E95B212500D45300E1F8AA /* LoginViewController.swift */; };
 		84E95B252500D4D800E1F8AA /* UIViewControllerExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E95B242500D4D800E1F8AA /* UIViewControllerExtentions.swift */; };
@@ -51,15 +55,19 @@
 		3C1AC14034750BC8F0AC6B74 /* Pods-NIBM-COVID19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBM-COVID19.debug.xcconfig"; path = "Target Support Files/Pods-NIBM-COVID19/Pods-NIBM-COVID19.debug.xcconfig"; sourceTree = "<group>"; };
 		6CD54621921C20F63A4D91D6 /* Pods-NIBM-COVID19Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBM-COVID19Tests.debug.xcconfig"; path = "Target Support Files/Pods-NIBM-COVID19Tests/Pods-NIBM-COVID19Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8447C8EF250CA16C00B7301E /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
-		8447C8F1250CA1A900B7301E /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		8447C8F3250CCB1600B7301E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		845230E825112A5B002D4239 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		8455B0E5250A0C3A008EA7EB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8455B0E7250A0D55008EA7EB /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		8455B0E9250A108D008EA7EB /* InfectedUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectedUsersViewController.swift; sourceTree = "<group>"; };
 		8455B0EC250A1554008EA7EB /* NavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
 		8455B0EE250A1699008EA7EB /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		8455B0F2250A3FA3008EA7EB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		8455B0F4250A3FCC008EA7EB /* SummeryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummeryViewController.swift; sourceTree = "<group>"; };
+		84B3C7682510F9E60015122B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		84B3C76A2510FC000015122B /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		84B3C76C251110130015122B /* AvoidSickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidSickViewController.swift; sourceTree = "<group>"; };
+		84B3C76E2511104A0015122B /* AvoidCrowdedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidCrowdedViewController.swift; sourceTree = "<group>"; };
+		84B3C7702511107F0015122B /* AvoidSickPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidSickPeopleViewController.swift; sourceTree = "<group>"; };
 		84E95B1F2500D10E00E1F8AA /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		84E95B212500D45300E1F8AA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84E95B242500D4D800E1F8AA /* UIViewControllerExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtentions.swift; sourceTree = "<group>"; };
@@ -154,7 +162,6 @@
 				84E95B292501276800E1F8AA /* LocationManager.swift */,
 				8455B0EE250A1699008EA7EB /* AlertManager.swift */,
 				8447C8EF250CA16C00B7301E /* UserDefaultManager.swift */,
-				8447C8F1250CA1A900B7301E /* AuthenticationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -244,7 +251,12 @@
 				8455B0E7250A0D55008EA7EB /* CategoryTableViewCell.swift */,
 				8455B0E9250A108D008EA7EB /* InfectedUsersViewController.swift */,
 				8455B0F2250A3FA3008EA7EB /* MapViewController.swift */,
-				8455B0F4250A3FCC008EA7EB /* SummeryViewController.swift */,
+				84B3C7682510F9E60015122B /* FirstViewController.swift */,
+				84B3C76A2510FC000015122B /* PageViewController.swift */,
+				84B3C76C251110130015122B /* AvoidSickViewController.swift */,
+				84B3C76E2511104A0015122B /* AvoidCrowdedViewController.swift */,
+				84B3C7702511107F0015122B /* AvoidSickPeopleViewController.swift */,
+				845230E825112A5B002D4239 /* SettingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -437,17 +449,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E95B222500D45300E1F8AA /* LoginViewController.swift in Sources */,
-				8455B0F5250A3FCC008EA7EB /* SummeryViewController.swift in Sources */,
 				8455B0ED250A1554008EA7EB /* NavigationUtil.swift in Sources */,
 				8455B0EF250A1699008EA7EB /* AlertManager.swift in Sources */,
-				8447C8F2250CA1A900B7301E /* AuthenticationManager.swift in Sources */,
 				8455B0EA250A108D008EA7EB /* InfectedUsersViewController.swift in Sources */,
+				84B3C7692510F9E60015122B /* FirstViewController.swift in Sources */,
 				84F702CC24FF766B00D8EE71 /* ViewController.swift in Sources */,
+				84B3C76D251110130015122B /* AvoidSickViewController.swift in Sources */,
 				8447C8F0250CA16C00B7301E /* UserDefaultManager.swift in Sources */,
+				84B3C76F2511104A0015122B /* AvoidCrowdedViewController.swift in Sources */,
+				845230E925112A5B002D4239 /* SettingViewController.swift in Sources */,
 				84E95B2725011B6600E1F8AA /* SignUpViewController.swift in Sources */,
+				84B3C7712511107F0015122B /* AvoidSickPeopleViewController.swift in Sources */,
 				84E95B252500D4D800E1F8AA /* UIViewControllerExtentions.swift in Sources */,
 				84E95B2D2501448100E1F8AA /* RegisterService.swift in Sources */,
 				84E95B202500D10E00E1F8AA /* RoundButton.swift in Sources */,
+				84B3C76B2510FC000015122B /* PageViewController.swift in Sources */,
 				84F702D224FF766B00D8EE71 /* NIBM_COVID19.xcdatamodeld in Sources */,
 				8455B0E6250A0C3A008EA7EB /* HomeViewController.swift in Sources */,
 				84F702C824FF766B00D8EE71 /* AppDelegate.swift in Sources */,
@@ -547,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -601,7 +617,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

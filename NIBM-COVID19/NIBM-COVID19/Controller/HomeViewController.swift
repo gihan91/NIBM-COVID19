@@ -9,12 +9,15 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import Charts
 
 class HomeViewController: UIViewController {
 
     let userID = Auth.auth().currentUser?.uid
     var hasCovid: Bool = false
     let ref = Database.database().reference()
+    var emailArray: [String] = [String]()
+    var userObj: User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
