@@ -29,6 +29,7 @@ class SettingViewController: UIViewController {
         if let userID = self.userID {
             self.ref.child("users").child(userID).child("email").setValue(txtEmail.text)
             self.ref.child("users").child(userID).child("userTemp").setValue(txtTemp.text)
+            Alert.showMessage(title: "Success", msg: "Successfully Update", on: self)
         } else {
             print("error")
         }

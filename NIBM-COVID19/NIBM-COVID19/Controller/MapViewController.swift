@@ -51,6 +51,7 @@ class MapViewController: UIViewController {
     }
 
     func setMarkersOnMap() {
+        //Change the variable
         for state in self.userArray {
             if state.status ?? false {
                 let lat = Double(state.lat!)

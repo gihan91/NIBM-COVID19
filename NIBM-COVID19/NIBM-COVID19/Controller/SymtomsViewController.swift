@@ -9,8 +9,8 @@
 import UIKit
 import Firebase
 
-
-class FirstViewController: UIViewController {
+//Change class name
+class HaveSymptomsViewController: UIViewController {
     
      let userID = Auth.auth().currentUser?.uid
     let ref = Database.database().reference()

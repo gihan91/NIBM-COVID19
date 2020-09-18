@@ -14,6 +14,7 @@ import FirebaseDatabase
 class Services {
     typealias CompletionHandler = (_ success:Bool) -> Void
 
+    //Register for user
     static func registerUser(withEmail email: String, passwordIs password: String, UserType userType: String, latitude lat: CLLocationDegrees, longitude lon: CLLocationDegrees, completionHandler: CompletionHandler?) {
 
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
@@ -34,6 +35,7 @@ class Services {
 
     }
 
+    //Login for user
     static func login(email: String, password: String,completion: @escaping CompletionHandler) {
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if let error = error {

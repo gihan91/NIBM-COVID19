@@ -15,9 +15,5 @@ class User {
     var userType: String?
     var status: Bool?
     var userTemp: Double?
-    var userArray:UserObj?
 }
 
-struct UserObj {
-    var userCount: [User] = [User]()
-}

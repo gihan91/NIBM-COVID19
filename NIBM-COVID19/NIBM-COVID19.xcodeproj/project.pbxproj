@@ -17,7 +17,7 @@
 		8455B0ED250A1554008EA7EB /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455B0EC250A1554008EA7EB /* NavigationUtil.swift */; };
 		8455B0EF250A1699008EA7EB /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455B0EE250A1699008EA7EB /* AlertManager.swift */; };
 		8455B0F3250A3FA3008EA7EB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455B0F2250A3FA3008EA7EB /* MapViewController.swift */; };
-		84B3C7692510F9E60015122B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C7682510F9E60015122B /* FirstViewController.swift */; };
+		84B3C7692510F9E60015122B /* SymtomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C7682510F9E60015122B /* SymtomsViewController.swift */; };
 		84B3C76B2510FC000015122B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C76A2510FC000015122B /* PageViewController.swift */; };
 		84B3C76D251110130015122B /* AvoidSickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C76C251110130015122B /* AvoidSickViewController.swift */; };
 		84B3C76F2511104A0015122B /* AvoidCrowdedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3C76E2511104A0015122B /* AvoidCrowdedViewController.swift */; };
@@ -63,7 +63,7 @@
 		8455B0EC250A1554008EA7EB /* NavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
 		8455B0EE250A1699008EA7EB /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		8455B0F2250A3FA3008EA7EB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		84B3C7682510F9E60015122B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		84B3C7682510F9E60015122B /* SymtomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymtomsViewController.swift; sourceTree = "<group>"; };
 		84B3C76A2510FC000015122B /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		84B3C76C251110130015122B /* AvoidSickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidSickViewController.swift; sourceTree = "<group>"; };
 		84B3C76E2511104A0015122B /* AvoidCrowdedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidCrowdedViewController.swift; sourceTree = "<group>"; };
@@ -251,7 +251,7 @@
 				8455B0E7250A0D55008EA7EB /* CategoryTableViewCell.swift */,
 				8455B0E9250A108D008EA7EB /* InfectedUsersViewController.swift */,
 				8455B0F2250A3FA3008EA7EB /* MapViewController.swift */,
-				84B3C7682510F9E60015122B /* FirstViewController.swift */,
+				84B3C7682510F9E60015122B /* SymtomsViewController.swift */,
 				84B3C76A2510FC000015122B /* PageViewController.swift */,
 				84B3C76C251110130015122B /* AvoidSickViewController.swift */,
 				84B3C76E2511104A0015122B /* AvoidCrowdedViewController.swift */,
@@ -452,7 +452,7 @@
 				8455B0ED250A1554008EA7EB /* NavigationUtil.swift in Sources */,
 				8455B0EF250A1699008EA7EB /* AlertManager.swift in Sources */,
 				8455B0EA250A108D008EA7EB /* InfectedUsersViewController.swift in Sources */,
-				84B3C7692510F9E60015122B /* FirstViewController.swift in Sources */,
+				84B3C7692510F9E60015122B /* SymtomsViewController.swift in Sources */,
 				84F702CC24FF766B00D8EE71 /* ViewController.swift in Sources */,
 				84B3C76D251110130015122B /* AvoidSickViewController.swift in Sources */,
 				8447C8F0250CA16C00B7301E /* UserDefaultManager.swift in Sources */,
@@ -639,7 +639,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gihan.NIBM-COVID19";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sandaru.NIBM-COVID19";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -658,7 +658,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gihan.NIBM-COVID19";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sandaru.NIBM-COVID19";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

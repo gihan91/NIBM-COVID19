@@ -15,6 +15,7 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
        // MARK: UIPageViewControllerDataSource
 
        lazy var orderedViewControllers: [UIViewController] = {
+        //change the names
            return [self.newVc(viewController: "sbBlue"),
                    self.newVc(viewController: "sbRed"),
        self.newVc(viewController: "crowed"),
@@ -80,6 +81,7 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
                // return nil
            }
 
+        //Error Handling
            guard orderedViewControllers.count > previousIndex else {
                return nil
            }

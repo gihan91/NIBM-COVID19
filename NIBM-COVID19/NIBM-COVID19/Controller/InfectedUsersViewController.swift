@@ -48,6 +48,7 @@ class InfectedUsersViewController: UIViewController {
         chartInfectedUsers.data = pieChartData
     }
 
+    //Use Random Colors
     private func colorsOfCharts(numbersOfColor: Int) -> [UIColor] {
       var colors: [UIColor] = []
       for _ in 0..<numbersOfColor {
@@ -61,6 +62,7 @@ class InfectedUsersViewController: UIViewController {
     }
 
 
+    //Getting User object
     public func getUserObject() {
         let ref = Database.database().reference().child("users")
         ref.observe(.childAdded, with: { (snapshot) in
@@ -69,6 +71,7 @@ class InfectedUsersViewController: UIViewController {
                 return
             }
 
+            //Create object
             let Obj = User()
             Obj.email = dictionary["email"] as? String
             Obj.lat = dictionary["lat"] as? Double
@@ -94,6 +97,7 @@ class InfectedUsersViewController: UIViewController {
         }, withCancel: nil)
     }
 
+    //Not use
     func get(arr: Int) {
         print("::::array count is \(arr)")
     }
