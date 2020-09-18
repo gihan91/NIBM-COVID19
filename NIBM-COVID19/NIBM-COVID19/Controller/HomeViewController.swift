@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
             self.sendPatientStatus()
         }))
 
-        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+        refreshAlert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { (action: UIAlertAction!) in
             print("Handle Cancel Logic here")
         }))
 
@@ -43,7 +43,7 @@ class HomeViewController: UIViewController {
         if let userID = self.userID {
             self.ref.child("users").child(userID).child("status").setValue(true)
         }
-        
+
     }
     
     public func setupNavigationBar(title: String) {

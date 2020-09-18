@@ -15,7 +15,14 @@ class InfectedUsersViewController: UIViewController {
     @IBOutlet var chartInfectedUsers: PieChartView!
 
     var studentCount: [Int] = [Int]()
+
+
+    var studentArrayObject: [User] = [User]()
+    var countArray = [Int]()
     var studentEmail: [String] = [String]()
+
+    let players = ["Ozil", "Ramsey", "Laca", "Auba", "Xhaka", "Torreira"]
+    let goals = [6, 8, 26, 30, 8, 10]
 
     var userObj: User?
     var numberOfData = [PieChartDataEntry]()
@@ -79,27 +86,14 @@ class InfectedUsersViewController: UIViewController {
             Obj.userType = dictionary["usertype"] as? String
             Obj.status = dictionary["status"] as? Bool
             Obj.userTemp = dictionary["userTemp"] as? Double
-
-
-
+            self.studentArrayObject.append(Obj)
             if Obj.status == true {
-                 if Obj.userType == "Academic Staff" {
-                    self.studentEmail.append(Obj.userType ?? "")
-                    self.studentCount.append(Obj.userType?.count ?? 0 )
-                }
-
-                self.customizeChart(dataPoints: self.studentEmail, values: self.studentCount.map{ Double($0) })
+                self.studentEmail.append(Obj.email!)
+                self.countArray.append(self.studentEmail.count)
             }
-
-
-
+            self.customizeChart(dataPoints: self.studentEmail, values: self.countArray.map{ Double($0) })
 
         }, withCancel: nil)
-    }
-
-    //Not use
-    func get(arr: Int) {
-        print("::::array count is \(arr)")
     }
 
 }
