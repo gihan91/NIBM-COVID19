@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1020791756524-ssaptorg4e7msrpllgkrkc94cv2ohfev.apps.googleusercontent.com</string>
+	<string>1020791756524-6apoar601gieoo66fi9lls8la8nfnmq6.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1020791756524-ssaptorg4e7msrpllgkrkc94cv2ohfev</string>
+	<string>com.googleusercontent.apps.1020791756524-6apoar601gieoo66fi9lls8la8nfnmq6</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAhPCIjocKTpewrOX2H_upGyaDC7YtrGYY</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.gihan.NIBM-COVID19</string>
+	<string>com.sandaru.NIBM-COVID19</string>
 	<key>PROJECT_ID</key>
 	<string>nibm-covid19-ee21b</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1020791756524:ios:d393f51acf253dbb03b7c9</string>
+	<string>1:1020791756524:ios:80e4ff172216465403b7c9</string>
 	<key>DATABASE_URL</key>
 	<string>https://nibm-covid19-ee21b.firebaseio.com</string>
 </dict>
